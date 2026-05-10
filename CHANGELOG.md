@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/asermax/pi-save/compare/v1.0.1...v1.0.2) (2026-05-10)
+
+
+### Bug Fixes
+
+* extract shortcut key constant and use rawKeyHint for display ([5ef8d6d](https://github.com/asermax/pi-save/commit/5ef8d6d16b66b70b8b758818d62b55bca41349ba))
+
 ## [1.0.1](https://github.com/asermax/pi-save/compare/v1.0.0...v1.0.1) (2026-05-10)
 
 
