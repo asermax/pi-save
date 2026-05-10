@@ -1,3 +1,11 @@
+## [1.0.2](https://github.com/asermax/pi-save/compare/v1.0.1...v1.0.2) (2026-05-10)
+
+
+### Bug Fixes
+
+* use @semantic-release/npm directly with trusted publishing ([d384723](https://github.com/asermax/pi-save/commit/d384723dc422dd6292507954280adc4acb96889e))
+* use exec plugin for npm publish with provenance, no registry-url ([5961075](https://github.com/asermax/pi-save/commit/59610755ce086fa37105bf1f8399a6b0fa8597a3))
+
 ## [1.0.1](https://github.com/asermax/pi-save/compare/v1.0.0...v1.0.1) (2026-05-10)
 
 
