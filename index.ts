@@ -10,13 +10,16 @@
  * Install:
  *   pi install git:git@github.com:asermax/pi-save
  */
+import { rawKeyHint } from "@earendil-works/pi-coding-agent";
 import type { ExtensionAPI } from "@earendil-works/pi-coding-agent";
+
+const SHORTCUT_KEY = "alt+s";
 
 export default function (pi: ExtensionAPI) {
 	let stashedText: string | null = null;
 
 	const STATUS_KEY = "pi-save";
-	const STASH_INDICATOR = "📝 Prompt stashed (alt+s to restore)";
+	const STASH_INDICATOR = `📝 Prompt stashed (${rawKeyHint(SHORTCUT_KEY, "to restore")})`;
 
 	/**
 	 * Restore stashed text into the editor.
@@ -27,7 +30,7 @@ export default function (pi: ExtensionAPI) {
 
 		const current = ctx.ui.getEditorText();
 		if (current && current.trim().length > 0) {
-			ctx.ui.notify("Prompt stash skipped — editor has content. Press alt+s to restore manually.", "warning");
+			ctx.ui.notify(`Prompt stash skipped — editor has content. Press ${rawKeyHint(SHORTCUT_KEY, "to restore manually")}.`, "warning");
 			return false;
 		}
 
@@ -44,8 +47,8 @@ export default function (pi: ExtensionAPI) {
 		}
 	});
 
-	// Toggle stash via alt+s shortcut
-	pi.registerShortcut("alt+s", {
+	// Toggle stash via shortcut
+	pi.registerShortcut(SHORTCUT_KEY, {
 		description: "Stash/restore current prompt",
 		handler: async (ctx) => {
 			if (stashedText !== null) {
