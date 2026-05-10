@@ -7,6 +7,12 @@ Temporarily save what you're typing so you can send a different message first. T
 ## Install
 
 ```bash
+pi install npm:@asermax/pi-save
+```
+
+Or from git:
+
+```bash
 pi install git:git@github.com:asermax/pi-save.git
 ```
 
@@ -20,6 +26,12 @@ pi install git:git@github.com:asermax/pi-save.git
 
 The stash survives across sessions — if you start a new session while a prompt is stashed, it'll be restored into the editor on startup.
 
-## License
+## Development
 
-MIT
+This package uses [semantic-release](https://semantic-release.gitbook.io). To trigger a release, push conventional commits to `main`:
+
+- `feat:` → minor bump
+- `fix:` → patch bump
+- `feat!:` or `BREAKING CHANGE:` in footer → major bump
+
+No manual versioning or tagging needed — the CI handles it all.
