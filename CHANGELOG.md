@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/asermax/pi-save/compare/v1.0.2...v1.0.3) (2026-05-10)
+
+
+### Bug Fixes
+
+* revert shortcut key constant extraction and remove plan file ([022e725](https://github.com/asermax/pi-save/commit/022e725cb6c5ceddcd706a2acf3587098e1d731e))
+
 ## [1.0.2](https://github.com/asermax/pi-save/compare/v1.0.1...v1.0.2) (2026-05-10)
 
 
