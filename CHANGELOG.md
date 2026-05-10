@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/asermax/pi-save/compare/v1.0.0...v1.0.1) (2026-05-10)
+
+
+### Bug Fixes
+
+* remove registry-url for OIDC trusted publishing ([8dad417](https://github.com/asermax/pi-save/commit/8dad417f1b4fa5f694a7ae5f433cb43f8873e0c6))
+
 # 1.0.0 (2026-05-10)
 
 

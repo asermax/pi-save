@@ -1,6 +1,6 @@
 {
   "name": "@asermax/pi-save",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Stash and restore your Pi prompt via alt+s",
   "type": "module",
   "keywords": [
