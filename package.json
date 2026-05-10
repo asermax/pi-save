@@ -1,5 +1,5 @@
 {
-  "name": "pi-save",
+  "name": "@asermax/pi-save",
   "version": "0.1.0",
   "description": "Stash and restore your Pi prompt via alt+s",
   "type": "module",
@@ -13,10 +13,16 @@
     "url": "git+https://github.com/asermax/pi-save.git"
   },
   "files": [
-    "*.ts",
+    "index.ts",
     "README.md",
     "LICENSE"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "publish": "npm publish --access public"
+  },
   "pi": {
     "extensions": [
       "./index.ts"
